@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Here we go</title>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/testApp.css">
 </head>
@@ -23,28 +25,30 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-        	<li><a href="#goProjects">Projects</a></li>
-        	<li><a href="#goAbout">About</a></li>
-        	<li><a href="#goPosts">Posts</a></li>
+        	<li><a class="custBtn" id="projectsBtn" href="#goProjects">Projects</a></li>
+        	<li><a class="custBtn" id="aboutBtn" href="#goAbout">About</a></li>
+        	<li><a class="custBtn" id="postsBtn" href="#goPosts">Posts</a></li>
         </ul>
       </div><!--/.navbar-collapse -->
     </div>
   </nav>
-
+  <div class="sideNav hidden-xs" style="position: absolute; right: 0; top: 10%;">
+  	
+  </div>
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1>Ethan's Site</h1>
+      <h1 class="title">Ethan Bellora</h1>
     	<img src="img/cloud2.png" class="cloud hidden-xs">
-      <p>A simple site to learn more about me and the development work i do. Also what i can do for your company.</p>
+      <p>A simple site about professional front-end developer Ethan Bellora</p>
       <p><a class="btn btn-primary btn-lg" href="#goAbout" role="button">Learn more »</a></p>
     </div>
   </div>
 
   <div class="container heightCheck">
     
-  	<div id="goProjects" class="page-header">
-		  <h1>Projects <small> Click for more.</small></h1>
+  	<div id="goProjects" class="page-header text-center">
+		  <h1>Projects <small> - select snippets of projects i'm working on.</small></h1>
 		</div>
 		<div class="row">
       <div class="col-xs-12 col-md-6 thumbsUp">
@@ -78,24 +82,27 @@
 				</a>
 			</div>
 		</div>
-		<div id="goPosts" class="page-header">
-		  <h1>Recent Posts<small> click below to read more.</small></h1>
+		<div id="goPosts" class="page-header text-center">
+		  <h1>Recent Posts<small> - recent posts about design and style.</small></h1>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 well well-sm">
-					<p class="justContent">
-						<img src="img/prof1.jpg" class="blogImages L">
-						ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<img src="img/prof1.jpg" class="blogImages L">
+					<h3>Design focus points for 2017 <small> - 1/2/2017</small></h3>
+					<p class="justContent">Keeping up with design trends is essential to web development. More and more statistics show that an up-to-date responsive modern website leads to more searches, higher retention rate, and increased traffic. </p>
+					<p>
+					In 2017 i'll focus on these few points: 
+					<strong>Accessibility</strong>, <strong>Responsiveness</strong>, <strong>User experience /  User flow</strong>, <strong>Page speed</strong>, and <strong>Security</strong>
 					</p>
+					
+					<p class="justContent">Accessibility means making the web page accessible for everyone, whether they're on a tablet or can't afford the latest iphone7. I'll focus on simpler yet intuitive web elements while following the WCAG guidelines. Responsiveness is big, so i'll focus on mobile design considerations in another post. How big? <a>In some content categories more than half.</a> With User experience i'll focus on A/B testing to ensure and test new and interesting user flows. Page load speed can go hand in hand with accessibility because a more accessible website can / should be simpler and load faster for everyone. I'll be using tools like <a>Google's page speed insights. </a> My last focus will be in web application security. I need to read up more on this subject as it is one of my weaker points but preventing attacks and securing user data is essential. Especially considering the sony / yahoo hacks are fresh in consumers minds.</p>
+					<p>I'll also focusing on my pasta sauces, a roux is great for thickening white sauces but what can I incorporate to thicken my reds? 2017 will be a year of learning.</p>
+
 			</div>
 			<div class="col-xs-12 well well-sm">
+					<img src="img/prof1.jpg" class="blogImages R">
+					<h3>Post 1 <small> - 1/2/2017</small></h3>
 					<p class="justContent">
-						<img src="img/prof1.jpg" class="blogImages R">
 						ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -104,9 +111,10 @@
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
 			</div>		
-			<div class="col-xs-12 well well-sm">
+			<!-- <div class="col-xs-12 well well-sm">
+					<img src="img/prof1.jpg" class="blogImages L">
+					<h3>Post 3 <small> - 1/2/2017</small></h3>
 					<p class="justContent">
-						<img src="img/prof1.jpg" class="blogImages L">
 						ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -114,22 +122,23 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
-			</div>
+			</div> -->
 		</div>
 
 
 
 
      
-   	<div id="goAbout" class="page-header">
-		  <h1>About me <small> Click an image for more.</small></h1>
+   	<div id="goAbout" class="page-header text-center">
+		  <h1>About Me <small> - delve deeper...</small></h1>
 		</div>
     <div class="row heightCheck">
     	<div class="col-md-6 text-center">
-    		<img src="img/me.jpg" style="height: 300px;padding-top: 6rem;">
+    		<img id="myImage" src="img/me.jpg">
     	</div>
-    	<div class="col-md-6 blogContent">
+    	<div class="col-md-6 aboutContent">
     		<p class="justContent">
+    		<h3>About my work...</h3>
     			ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -137,12 +146,19 @@
     		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     		</p>
+    		<p>Some design i'm employing:</p>
+    		<ul>
+    			<li>Atomic Design</li>
+    			<li>Minimalism</li>
+    			<li>Optimizing page speed</li>
+    			<li>Balancing good UX and design</li>
+    		</ul>
     	</div>
     </div>
     <hr>
 
     <footer>
-      <p>© 2016 Company, Inc.</p>
+      <p>© 2016 Ethan me Bellora, Inc.</p>
     </footer>
   </div> <!-- /container -->
 

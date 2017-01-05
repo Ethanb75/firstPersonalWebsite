@@ -1,6 +1,5 @@
 html {
 	height: 100%;
-	background: #CFF7F2;
 }
 body {
 	position: relative;
@@ -11,6 +10,65 @@ footer {
 	background: #3F756E;
 	color: whitesmoke;
 }
+h1 {
+	color: whitesmoke;
+	font-family: 'Pacifico', cursive;
+}
+.page-header h1 {
+	margin: 0;
+	padding: 24px 10px;
+	background: #68C2B6;
+}
+
+/*navbar styles below*/
+#projectsBtn {
+	background-color: #627573;
+	color: whitesmoke;
+	transition: padding .3s ease-in-out;
+}
+#aboutBtn {
+	background-color: #84F5E6;
+	color: whitesmoke;
+	transition: padding .3s ease-in-out;
+}
+#postsBtn {
+	background: #68C2B6;
+	color: whitesmoke;
+	transition: padding .3s ease-in-out;
+}
+/*Top container styles */
+h1.title {
+	font-size: 10rem;
+	margin-bottom: 3rem;
+	animation: 15s ease-in-out colorsText;
+	animation-iteration-count: infinite;
+}
+.btn.btn-primary.btn-lg{
+	border-radius: 0;
+	border: 1px solid whitesmoke;
+	background: transparent;
+}
+.btn.btn-primary.btn-lg:hover {
+	background: whitesmoke;
+	color: rgb(10,10,10);
+}
+/*fixed the wells below*/
+.well {
+	webkit-box-shadow: 0;
+	box-shadow: 0;
+	border: 0;
+	border-radius: 0;
+	background: #CFF7F2;
+}
+/*Projects style*/
+h3 {
+	font-family: 'Pacifico', cursive;
+}
+.thumbnail {
+	border-radius: 0;
+	background: #CFF7F2;
+}
+/*BLANK styles below*/
 .cloud {
 	height: 300px; 
 	float: right;
@@ -49,10 +107,35 @@ footer {
 .justContent {
 	text-align: justify;
 }
-
+/*about styles*/
+#myImage {
+	height: 300px;
+	margin-top: 6rem;
+	border-radius: 150px;
+	border: 1rem solid #627573;
+}
+.aboutContent {
+	background: #CFF7F2;
+	padding: 2rem;
+}
+/*color effects below*/
+@keyframes colorsText {
+			0% {color: #A84743;}
+			25% {color: #F2F794;}
+			50% {color: #F57F7A;}
+			75% {color: #4D8CC2;}
+			100% {color: #A84743;}
+	}
+/*specializing for media sizes below*/
 @media (min-width: 768px) {
-	.blogContent {
+	/*hover effect is only on bigger screens*/
+	.custBtn:hover {
+		padding-top: 20px;
+		transition: padding .2s ease-in-out;
+	}
+	.aboutContent {
 		padding: 6rem;
+		margin-top: 6rem;
 	}
 	.heightCheck{
 		position: relative;
