@@ -1,0 +1,79 @@
+html {
+	height: 100%;
+	background: #CFF7F2;
+}
+body {
+	position: relative;
+	height: 100%
+}
+footer {
+	padding: 1rem;
+	background: #3F756E;
+	color: whitesmoke;
+}
+.cloud {
+	height: 300px; 
+	float: right;
+}
+.thumbsUp {
+	padding: 0;
+}
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	border: 0;
+	background-color: transparent;
+}
+.navbar-default .navbar-brand {
+	color: whitesmoke;
+}
+.jumbotron {
+	padding-top: 6rem;
+	margin-bottom: 0;
+	background: #3F756E;
+	color: whitesmoke;
+}
+.row {
+	margin: 0;
+}
+.blogImages.L {
+	height:150px;
+	float: left;
+	margin: .5rem .5rem .5rem 0;
+}
+.blogImages.R {
+	height:150px;
+	float: right;
+	margin: .5rem 0rem .5rem .5rem;
+}
+.justContent {
+	text-align: justify;
+}
+
+@media (min-width: 768px) {
+	.blogContent {
+		padding: 6rem;
+	}
+	.heightCheck{
+		position: relative;
+		height: 100%;
+	}
+	.thumbnail {
+		margin: 0;
+	}
+	.jumbotron {
+		position: relative;
+		height: 100%;
+		padding-top: 14rem;
+	}
+	.container-fluid>.navbar-header {
+	margin-left: 4rem;
+	}
+	.container {
+		margin-left: 4rem;
+	}
+	.navbar-right {
+
+    margin-right: 4rem;
+	}
+}
