@@ -25,8 +25,8 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
         	<li><a class="custBtn" id="projectsBtn" href="#goProjects">Projects</a></li>
-        	<li><a class="custBtn" id="aboutBtn" href="#goAbout">About</a></li>
-        	<li><a class="custBtn" id="postsBtn" href="#goPosts">Posts</a></li>
+        	<li><a class="custBtn" id="aboutBtn" href="#goAbout">About Me</a></li>
+        	<li><a class="custBtn" id="postsBtn" href="#goPosts">Blog Posts</a></li>
         </ul>
       </div><!--/.navbar-collapse -->
     </div>
@@ -37,7 +37,11 @@
       <h1 class="title">Ethan Bellora</h1>
     	<img src="img/cloud2.png" class="cloud hidden-xs">
       <p>A simple site about professional front-end developer Ethan Bellora</p>
-      <p><a class="btn btn-primary btn-lg" href="#goAbout" role="button">Learn more »</a></p>
+      <p>
+      	<a class="btn btn-primary btn-lg" href="#goAbout" role="button">About me »</a>
+      	<a class="btn btn-primary btn-lg" href="#goProjects" role="button">Recent Projects »</a>
+      	<a class="btn btn-primary btn-lg" href="#goPosts" role="button">Blog Posts »</a>
+      </p>
     </div>
   </div>
   <div class="sideNav hidden-xs" style="position: fixed; right: 0; top: 10%;">
@@ -51,38 +55,56 @@
   </div>
   <div class="container heightCheck">
   	<div id="goProjects" class="page-header text-center">
-		  <h1>Projects <small> - select snippets of projects i'm working on.</small></h1>
+		  <h1>Projects <small> - some projects i'm working on.</small></h1>
 		</div>
-		<div class="row">
+		<div class="row text-center">
       <div class="col-xs-12 col-md-6 thumbsUp">
-				<a href="#goProjects" class="thumbnail">
-				  <img src="img/project1.PNG" alt="...">
-				</a>
+				<div class="thumbnail">
+					<img src="img/project1.PNG" alt="...">
+      		<div class="caption">
+        		<h3>Lawn care website example</h3>
+        	</div>
+        </div>
 			</div>
 			<div class="col-xs-12 col-md-6 thumbsUp">
-				<a href="#goProjects" class="thumbnail">
-				  <img src="img/project2.PNG" alt="...">
-				</a>
+				<div class="thumbnail">
+					<img src="img/project2.PNG" alt="...">
+      		<div class="caption">
+        		<h3>Artistic JS web app</h3>
+        	</div>
+        </div>
 			</div>
 			<div class="col-xs-12 col-md-6 thumbsUp">
-				<a href="#goProjects" class="thumbnail">
-				  <img src="img/project3.PNG" alt="...">
-				</a>
+				<div class="thumbnail">
+					<img src="img/project3.PNG" alt="...">
+      		<div class="caption">
+        		<h3>Gatech IEN homepage test</h3>
+        	</div>
+        </div>
 			</div>
-      <div class="col-xs-12 col-md-6 thumbsUp">
-				<a href="#goProjects" class="thumbnail">
-				  <img src="img/project4.PNG" alt="...">
-				</a>
+     <div class="col-xs-12 col-md-6 thumbsUp">
+				<div class="thumbnail">
+					<img src="img/project4.PNG" alt="...">
+      		<div class="caption">
+        		<h3>TODO JS web application</h3>
+        	</div>
+        </div>
 			</div>
 			<div class="col-xs-12 col-md-6 thumbsUp">
-				<a href="https://bell-family-hub-ethanb75.c9users.io/blogs" class="thumbnail">
-				  <img src="img/project5.PNG" alt="...">
-				</a>
+				<div class="thumbnail">
+					<img src="img/project5.PNG" alt="...">
+      		<div class="caption">
+        		<h3>RESTful Blog application</h3>
+        	</div>
+        </div>
 			</div>
 			<div class="col-xs-12 col-md-6 thumbsUp">
-				<a href="#goProjects" class="thumbnail">
-				  <img src="img/project6.PNG" alt="...">
-				</a>
+				<div class="thumbnail">
+					<img src="img/project6.PNG" alt="...">
+      		<div class="caption">
+        		<h3>Single page JS blog application</h3>
+        	</div>
+        </div>
 			</div>
 		</div>
 		<div id="goPosts" class="page-header text-center">
@@ -128,11 +150,11 @@
     <div class="row">
     	<div class="col-md-6 text-center">
     		<img id="myImage" src="img/me.jpg">
-    		<h3 style="text-align: left;">More about me...</h3>
-    		<p class="justContent" style="padding: 1rem;/*don't kill me for this inline*/">
+    		<h3 style="text-align: left; padding-left: 2rem;">About me personally</h3>
+    		<p class="justContent" style="padding: 2rem;/*don't kill me for this inline*/">
     			On a personal level I love music. Lots of people will say 'I like all types of music' but they've never gone from 70's soft rock love songs to modern ska to disco tunes and back in one sitting. I'm passionate about the environment ever since my freshman environmental biology course. My proffessor made it a point to show us how much we consume, how much we throw away, and how it's ruining the planet. But I also love good design on the internet and see it as a way to spred information and correct misinformation. But a point can be so much more powerful if formatted correctly.
     			</p>
-    			<p style="text-align: left; padding: 1rem;"><STRONG>Some tools and concepts i'm perfecting:</STRONG></p>
+    			<p style="text-align: left; padding: 2rem;"><STRONG>Some tools and concepts i'm perfecting:</STRONG></p>
     			<ul>
     				<li>ReactJS, InfernoJS(?), PaperJS</li>
     				<li>CSS3 only animations, Sass, LEAN UX / Agile development</li>
@@ -140,10 +162,9 @@
     			</ul>
     	</div>
     	<div class="col-md-6 aboutContent">
+    		<h3>About my work</h3>
     		<p class="justContent">
-    		<h3>About my work...</h3>
-    			Hey, my names Ethan Bellora and I'm a professional front end developer. While my focus is in front end and design techniques I have knowledge in back end and RESTful services. I'm extremely passionate about learning and sharing everything I learn in the process. I believe perfecting a front end language is essential but what makes a good dev great is all in the details of design. You can be amazing at positioning elements and fancy JS animations but if you don't know when to use them correctly you'll miss your mark. While I don't have a ton of experience at the moment I'm always working on projects in tandum with my studies. I hope to make a few of the projects a success while I search for a development community to call home. I take courses at Udemy for my education and have read Jon Ducketts <i>Javascript & JQuery</i>. Please visit my <a href="https://stackshare.io/Ethanb75">stackshare</a> to see some of the tools I like to employ, I would love the view!
-    		</p>
+    			Hello, my name's Ethan Bellora and I'm a professional front end developer. While my focus is in front end design techniques I have knowledge of back end and RESTful services. I'm extremely passionate about learning and sharing everything I learn in the process. I believe perfecting a front end language is essential but what makes a good dev great is all in the details of design. You can be amazing at positioning elements and JS animations but if you don't know when to use them correctly you'll miss your mark. While I don't have a ton of experience at the moment I'm always working on projects in tandum with my studies. I hope to make a few of my projects a success while I search for a development community to call home. I take courses at Udemy for my education and have studied Jon Ducketts <i>Javascript & JQuery</i>. Please visit my <a href="https://stackshare.io/Ethanb75">stackshare</a> to see some of the tools I like to employ, I would love the view!</p>
     		<p><STRONG>Some concepts I beleive are tried and true:</STRONG></p>
     		<ul>
     			<li>Atomic Design</li>
