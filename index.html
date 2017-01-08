@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ethan Bellora's site</title>
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/icon.min.css">
 	<link rel="stylesheet" type="text/css" href="css/testApp.css">
@@ -70,7 +71,7 @@
 				<div class="thumbnail">
 					<img src="img/project2.PNG" alt="...">
       		<div class="caption">
-        		<h3>Artistic JS web app</h3>
+        		<h3>Artistic paperJS web app</h3>
         	</div>
         </div>
 			</div>
@@ -145,13 +146,13 @@
 			</div> -->
 		</div>
    	<div id="goAbout" class="page-header text-center">
-		  <h1>About Me <small> - delve deeper...</small></h1>
+		  <h1>Learn more about me</h1>
 		</div>
     <div class="row">
     	<div class="col-md-6 text-center">
     		<img id="myImage" src="img/me.jpg">
     		<h3 style="text-align: left; padding-left: 2rem;">About me personally</h3>
-    		<p class="justContent" style="padding: 2rem;/*don't kill me for this inline*/">
+    		<p class="justContent" style="padding: 2rem;">
     			On a personal level I love music. Lots of people will say 'I like all types of music' but they've never gone from 70's soft rock love songs to modern ska to disco tunes and back in one sitting. I'm passionate about the environment ever since my freshman environmental biology course. My proffessor made it a point to show us how much we consume, how much we throw away, and how it's ruining the planet. But I also love good design on the internet and see it as a way to spred information and correct misinformation. But a point can be so much more powerful if formatted correctly.
     			</p>
     			<p style="text-align: left; padding: 2rem;"><STRONG>Some tools and concepts i'm perfecting:</STRONG></p>
@@ -188,6 +189,9 @@
 	<!-- Just in case -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript">
+  $(document).ready(function(){
+    $("h1.title").fadeToggle(500);
+  });
 		$(".custBtn").on('click', function(){
 			$("#navbar").toggleClass("in");
 		})
