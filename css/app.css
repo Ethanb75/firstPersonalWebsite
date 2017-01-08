@@ -6,6 +6,10 @@
 /*attempt to make the start bigger*/
 * {
 	color: whitesmoke;
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4 {
+	font-family: 'Josefin Sans', sans-serif;
 }
 html {
 	height: 100%;

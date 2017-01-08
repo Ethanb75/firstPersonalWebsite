@@ -1,3 +1,6 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
 html {
 	height: 100%;
 }
@@ -10,13 +13,16 @@ footer {
 	background: #3F756E;
 	color: whitesmoke;
 }
-h1 {
-	color: whitesmoke;
-	font-family: 'Pacifico', cursive;
+h1,h2,h3,h4 {
+	color: rgb(15,15,15);
+	font-family: 'Josefin Sans', sans-serif;
 }
 ul {
 	text-align: left;
 	list-style: none;
+}
+.caption {
+	text-align: left;
 }
 .page-header h1 {
 	margin: 0;
@@ -51,7 +57,8 @@ ul {
 }
 /*Top container styles */
 h1.title {
-	font-size: 10rem;
+	display: none;
+	font-size: 13rem;
 	margin-bottom: 3rem;
 	animation: 15s ease-in-out colorsText;
 	animation-iteration-count: infinite;
@@ -60,6 +67,7 @@ h1.title {
 	border-radius: 0;
 	border: 1px solid whitesmoke;
 	background: transparent;
+	margin: 1rem 0;
 }
 .btn.btn-primary.btn-lg:hover {
 	background: whitesmoke;
@@ -77,13 +85,14 @@ navbar-nav {
   margin: 0;
 }
 /*Projects style*/
-h3 {
-	font-family: 'Pacifico', cursive;
-}
+
 .thumbnail {
+	border: 0;
 	border-radius: 0;
 	background: #CFF7F2;
-}
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+/*	box-shadow: 1px 1px 3px 1px rgba(15, 15, 15, 0.2);
+*/}
 /*BLANK styles below*/
 .cloud {
 	height: 300px; 
@@ -129,7 +138,7 @@ h3 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	border-radius: 75px;
-	border: .4rem solid #C1AD5F;
+	border: .4rem transparent #C1AD5F;
 }
 .aboutContent {
 	background: #CFF7F2;
@@ -164,8 +173,8 @@ h3 {
 
 	/*hover effect is only on bigger screens*/
 	.custBtn:hover {
-		padding-top: 20px;
-		transition: padding .2s ease-in-out;
+		padding-top: 24px;
+		transition: padding .1s ease-in-out;
 	}
 	.aboutContent {
 		padding: 5rem;
@@ -176,7 +185,7 @@ h3 {
 		height: 100%;
 	}
 	.thumbnail {
-		margin: 0;
+		margin: .5rem;
 	}
 	.jumbotron {
 		position: relative;
